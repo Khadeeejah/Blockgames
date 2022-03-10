@@ -12,4 +12,16 @@ contract HelloWorld{
     // greeting()
     // uint age = 20;
     // int age1 = 22;
+ constructor(){
+    greeting = "Hello World";
+
+}
+
+function getMessage() public view returns (string memory ) {
+    return greeting;
+}
+  function setMessage( string memory _greeting) public{
+      greeting = _greeting;
+  }
+  
 }
